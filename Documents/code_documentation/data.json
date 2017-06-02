@@ -1,0 +1,162 @@
+{
+    "project": {
+        "name": "Stress Management",
+        "description": "Stress Management App",
+        "version": "1.0.0",
+        "url": "localhost"
+    },
+    "files": {
+        "development\\app\\login\\login.controller.js": {
+            "name": "development\\app\\login\\login.controller.js",
+            "modules": {},
+            "classes": {
+                "StressRootModule.loginController": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "StressRootModule": 1
+            }
+        },
+        "development\\app\\login\\login.service.js": {
+            "name": "development\\app\\login\\login.service.js",
+            "modules": {},
+            "classes": {
+                "StressRootModule.loginServiceHandler": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "StressRootModule": 1
+            }
+        },
+        "development\\app\\app.js": {
+            "name": "development\\app\\app.js",
+            "modules": {
+                "StressRootModule": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "StressRootModule": {
+            "name": "StressRootModule",
+            "submodules": {},
+            "elements": {},
+            "classes": {
+                "StressRootModule.loginController": 1,
+                "StressRootModule.loginServiceHandler": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "development\\app\\login\\login.service.js",
+            "line": 9,
+            "description": "Top level module of the Stress management App.",
+            "requires": [
+                "ui.router",
+                "ngCookies",
+                "ui.bootstrap"
+            ]
+        }
+    },
+    "classes": {
+        "StressRootModule.loginController": {
+            "name": "StressRootModule.loginController",
+            "shortname": "StressRootModule.loginController",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "StressRootModule",
+            "namespace": "StressRootModule",
+            "file": "development\\app\\login\\login.controller.js",
+            "line": 9,
+            "description": "LoginController is a controller that show Admin dashboard",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "$scope",
+                    "description": "is angular scope"
+                },
+                {
+                    "name": "CONSTANT",
+                    "description": "is angular CONSTANT"
+                },
+                {
+                    "name": "LoginService",
+                    "description": "is custom service use for validate credentials"
+                }
+            ]
+        },
+        "StressRootModule.loginServiceHandler": {
+            "name": "StressRootModule.loginServiceHandler",
+            "shortname": "StressRootModule.loginServiceHandler",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "StressRootModule",
+            "namespace": "StressRootModule",
+            "file": "development\\app\\login\\login.service.js",
+            "line": 9,
+            "description": "loginServiceHandler is a service that show Admin dashboard",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "$http",
+                    "description": "is protocol"
+                },
+                {
+                    "name": "CONSTANT",
+                    "description": "is angular CONSTANT"
+                },
+                {
+                    "name": "$q",
+                    "description": "is to validate promise"
+                }
+            ]
+        }
+    },
+    "elements": {},
+    "classitems": [
+        {
+            "file": "development\\app\\app.js",
+            "line": 18,
+            "description": "This method is used for app configuration.",
+            "itemtype": "method",
+            "name": "configHandler",
+            "params": [
+                {
+                    "name": "$httpProvider",
+                    "description": "It is the Object passed to use $httpProvider.",
+                    "type": "Object"
+                },
+                {
+                    "name": "$stateProvider",
+                    "description": "It is the Object passed to use $stateProvider.",
+                    "type": "Object"
+                },
+                {
+                    "name": "$urlRouterProvider",
+                    "description": "It is the Object passed to use $urlRouterProvider.",
+                    "type": "Object"
+                }
+            ],
+            "class": "",
+            "module": "StressRootModule"
+        },
+        {
+            "file": "development\\app\\app.js",
+            "line": 36,
+            "description": "This method is used for app configuration.",
+            "itemtype": "method",
+            "name": "runHandler",
+            "class": "",
+            "module": "StressRootModule"
+        }
+    ],
+    "warnings": []
+}
