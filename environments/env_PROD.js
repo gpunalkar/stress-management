@@ -1,10 +1,10 @@
 (function(){
-    'use strict';
+    'use strict'
     var EnvConfigModule = angular.module('EnvConfigModule', []);
 
     var envConfig = {
-        BASE_PATH: 'http://prod.stressmanagement.com'
-    };
+        BASE_PATH: 'http://stressmanagement.prod'
+    }
 
     EnvConfigModule.constant('__ENV', envConfig);
 

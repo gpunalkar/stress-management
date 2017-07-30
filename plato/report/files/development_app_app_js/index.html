@@ -44,11 +44,11 @@
   <div class="row">
     <div class="col-md-6">
       <h2 class="header">Maintainability <a href="http://blogs.msdn.com/b/codeanalysis/archive/2007/11/20/maintainability-index-range-and-meaning.aspx"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="A value between 0 and 100 that represents the relative ease of maintaining the code. A high value means better maintainability." data-original-title="Maintainability Index"  data-container="body"></i></a></h2>
-      <p class="stat">74.49</p>
+      <p class="stat">72.93</p>
     </div>
     <div class="col-md-6">
       <h2 class="header">Lines of code <i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="Source Lines of Code / Logical Lines of Code" data-original-title="SLOC/LSLOC" data-container="body"></i></h2>
-      <p class="stat">48</p>
+      <p class="stat">31</p>
     </div>
   </div>
   <div class="row historical">
@@ -62,11 +62,11 @@
   <div class="row">
     <div class="col-md-6">
       <h2 class="header">Difficulty  <a href="http://en.wikipedia.org/wiki/Halstead_complexity_measures"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="The difficulty measure is related to the difficulty of the program to write or understand." data-original-title="Difficulty" data-container="body"></i></a></h2>
-      <p class="stat">5.63</p>
+      <p class="stat">5.87</p>
     </div>
     <div class="col-md-6">
       <h2 class="header">Estimated Errors  <a href="http://en.wikipedia.org/wiki/Halstead_complexity_measures"><i class="icon icon-info-sign" rel="popover" data-placement="top" data-trigger="hover" data-content="Halstead's delivered bugs is an estimate for the number of errors in the implementation." data-original-title="Delivered Bugs" data-container="body"></i></a></h2>
-      <p class="stat">0.11</p>
+      <p class="stat">0.13</p>
     </div>
   </div>
 </div>
@@ -90,52 +90,35 @@
 <div class="container">
   <div class="row">
     <textarea id="file-source" class="col-md-12">/**
-     * Top level module of the Stress management App.
-     * 
-     * @module StressRootModule
-     * @requires ui.router, ngCookies, ui.bootstrap
-     */
+* Top level module of the Stress management App.
+* 
+* @module StressRootModule
+* @requires ui.router, ngCookies, ui.bootstrap
+*/
 (function(){
-	&#039;use strict&#039;;
-	
-	var StressRootModule = angular.module(&#039;StressRootModule&#039;, [&#039;ui.router&#039;, &#039;EnvConfigModule&#039;]);
+    &#039;use strict&#039;
+    var StressRootModule = angular.module(&quot;StressRootModule&quot;, [&#039;ui.router&#039;, &#039;EnvConfigModule&#039;]);
 
-	StressRootModule.config(configHandler);
-	StressRootModule.run(runHandler);
+    StressRootModule.config(configHandler);
+    StressRootModule.config(runHandler);
 
-	configHandler.$inject = [&#039;$httpProvider&#039;, &#039;$stateProvider&#039;,&#039;$urlRouterProvider&#039; ];
-	runHandler.$inject = [ ];
+    configHandler.$inject = [&#039;$httpProvider&#039;, &#039;$stateProvider&#039;, &#039;$urlRouterProvider&#039;];
+    runHandler.$inject = [];
 
-	/**
-	 * This method is used for app configuration.
-	 * @method configHandler
-	 * @param {object} $httpProvider It is the Object passed to use $httpProvider.
-	 * @param {object} $stateProvider It is the Object passed to use $stateProvider.
-	 * @param {object} $urlRouterProvider It is the Object passed to use $urlRouterProvider.
-	 */
-	function configHandler($httpProvider, $stateProvider, $urlRouterProvider){
-		// console.log(&#039;in configHandler&#039;);
-		$urlRouterProvider.otherwise(&#039;/login&#039;);
+    function configHandler($httpProvider, $stateProvider, $urlRouterProvider) {
+        $urlRouterProvider.otherwise(&#039;/login&#039;);
 
-		$stateProvider.state(&#039;/login&#039;, {
-			&#039;url&#039;: &#039;/login&#039;,
-			&#039;templateUrl&#039;: &#039;app/login/login.html&#039;,
-			&#039;controller&#039; : &#039;LoginController&#039;
-		});
-	}
+        $stateProvider.state(&#039;/login&#039;, {
+            &#039;url&#039;: &#039;/login&#039;,
+            &#039;templateUrl&#039;: &#039;app/login/login.html&#039;,
+            &#039;controller&#039;: &#039;LoginController&#039;
+        })
+        console.log(&#039;configHandler&#039;);
+    };
 
-	/**
-	 * This method is used for app configuration.
-	 * @method runHandler
-	 */
-	function runHandler(){
-//		console.log(&#039;in runHandler&#039;);
-	}
-
-	// StressRootModule.controller(&#039;myController&#039;, [&#039;$scope&#039;, function($scope) {
-	// 	$scope.test = &quot;Testing&quot;;
-	// }]);
-
+    function runHandler() {
+        console.log(&#039;runHandler&#039;);
+    };
 })();</textarea>
   </div>
 </div>

@@ -1,0 +1,153 @@
+{
+    "project": {
+        "name": "stress",
+        "description": "demand generation",
+        "version": "1.0.0",
+        "url": ""
+    },
+    "files": {
+        "development\\app\\login\\LoginController.js": {
+            "name": "development\\app\\login\\LoginController.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {
+                "StressRootModule": 1
+            }
+        },
+        "development\\app\\login\\LoginService.js": {
+            "name": "development\\app\\login\\LoginService.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {
+                "StressRootModule": 1
+            }
+        },
+        "development\\app\\app.js": {
+            "name": "development\\app\\app.js",
+            "modules": {
+                "StressRootModule": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "development\\app3\\login\\LoginController.js": {
+            "name": "development\\app3\\login\\LoginController.js",
+            "modules": {},
+            "classes": {
+                "StressRootModule.LoginController": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "StressRootModule": 1
+            }
+        },
+        "development\\app3\\login\\LoginService.js": {
+            "name": "development\\app3\\login\\LoginService.js",
+            "modules": {},
+            "classes": {
+                "StressRootModule.LoginService": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "StressRootModule": 1
+            }
+        },
+        "development\\app3\\app.js": {
+            "name": "development\\app3\\app.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "StressRootModule": {
+            "name": "StressRootModule",
+            "submodules": {},
+            "elements": {},
+            "classes": {
+                "StressRootModule.LoginController": 1,
+                "StressRootModule.LoginService": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "StressRootModule": 1
+            },
+            "tag": "module",
+            "file": "development\\app3\\login\\LoginService.js",
+            "line": 1,
+            "description": "Top level module of the Stress management App.",
+            "requires": [
+                "ui.router",
+                "ngCookies",
+                "ui.bootstrap"
+            ]
+        }
+    },
+    "classes": {
+        "StressRootModule.LoginController": {
+            "name": "StressRootModule.LoginController",
+            "shortname": "StressRootModule.LoginController",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "StressRootModule",
+            "namespace": "StressRootModule",
+            "file": "development\\app3\\login\\LoginController.js",
+            "line": 1,
+            "description": "LoginController is a controller that show Login screen",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "$scope",
+                    "description": "is angular scope"
+                },
+                {
+                    "name": "CONSTANT",
+                    "description": "is constant object"
+                },
+                {
+                    "name": "LoginService",
+                    "description": "is custom service used for login"
+                }
+            ]
+        },
+        "StressRootModule.LoginService": {
+            "name": "StressRootModule.LoginService",
+            "shortname": "StressRootModule.LoginService",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "StressRootModule",
+            "namespace": "StressRootModule",
+            "file": "development\\app3\\login\\LoginService.js",
+            "line": 1,
+            "description": "LoginService is a service for Login screen",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "$http",
+                    "description": "is a service object"
+                },
+                {
+                    "name": "CONSTANT",
+                    "description": "is constant object"
+                },
+                {
+                    "name": "$q",
+                    "description": "is a promise object"
+                }
+            ]
+        }
+    },
+    "elements": {},
+    "classitems": [],
+    "warnings": []
+}

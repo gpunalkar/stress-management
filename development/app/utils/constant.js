@@ -1,15 +1,13 @@
 (function(){
-'use strict';
-	var StressRootModule = angular.module('StressRootModule');
+    'use strict'
+    var StressRootModule = angular.module("StressRootModule");
     var constantObject = {
-//        BASE_PATH: 'http://localhost:8001',
         END_POINTS: {
-            LOGIN: '/login'
+            LOGIN: '/login',
+            LOGOUT: '/logout',
+            CHANGE_PASSWORD: '/changepassword',
         },
-        SECRET : 'abcdefg',
-        LOGOUT : '/logout'
+        SECRET: 'abcdefg'
     };
-
     StressRootModule.constant('CONSTANT', constantObject);
-
 })();

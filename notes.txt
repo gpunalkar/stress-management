@@ -1,0 +1,155 @@
+YSLow
+Plato report
+YUI doc
+New Relic
+
+
+how to start mongodb service
+
+go to path: C:\mongodb\bin
+
+open gitbash from there..
+
+then run command: mongod -dbpath=path/of/DB/directory/of/your/project/DB
+
+D:/projects/angular-learning/stress-management/data/DB
+
+how to start node server
+
+node server
+
+
+
+
+$http.post itself is a promise so use then
+
+$http.post(URL, postData, OPTIONS).then()
+
+
+structure of promise in angular
+
+$q(function(resolve, reject){
+
+
+})
+
+
+
+
+grunt is a task runner. their are millions of tasks created by developers for grunt. Any task that is prefixed by "grunt" is a genuine task when you search for it in google.
+
+static code report
+
+maintainability: should be above 75
+difficulty: maximum 20
+
+function complexity: should be 3 or less, not more than that.
+function sloc: should be very less.
+
+
+complexity: should be less than or 14
+sloc: source line of code should be 400 to 500 or less
+est errors: should be a 0. value
+lint errors: should be 0
+
+
+return $q(function(resolve, reject){
+	
+	resolve()
+	reject()
+
+})
+
+YSlow: use to measure code performance. grade should be either A or B
+
+code documentation
+
+
+
+
+Module definition comment
+
+ /**
+* Top level module of the Stress management App.
+     * 
+     * @module StressRootModule
+     * @requires ui.router, ngCookies, ui.bootstrap
+     */
+
+
+Function Definition comment:
+
+
+    /**
+     * This method is used to update the Building Type record.
+     * @method updateBuildingType
+     * @param {object} builidingTypeObject It is the Object passed in the request body.
+     * @param {function} callback Callback method is called at the completion of this method.
+     */
+
+Class definition comment
+
+/**
+     * HomeController is a controller that show Admin dashboard
+     * @namespace StressRootModule
+     * @class homeController
+     * @constructor
+     * @param $scope is angular scope
+     * @param $cookies is angular service which provides read/write access to browser's cookies
+     * @param $rootScope is angular service which used access globle scope
+     * @param homeService is custom service use for logout
+     */
+
+
+
+cwd: current working directory
+
+
+grunt task assignment:
+nodemailer
+beautify
+uglify
+concat
+for both css and JS
+
+use min prepare
+
+YUI SLOW
+
+grunt or gulp or webpack2(is used to maily as transpiler to convert typescript into JS and mainly used with Angular2 etc)
+
+**bydefault timeout of services is 30 sec
+
+Interceptor: $.ajax ke sabhi parameter ko modify karne ke liye interceptor use hota hai
+intercept is used to intercept the http request and response.
+interceptor can only be used with $httpProvider.
+
+
+
+----------------------------
+Authentication
+
+Change Password
+
+Forgot Password
+
+Manage Users:
+	Add User
+	Edit User
+	Delete User
+	Sort by Name
+	Search User
+	Filter User
+
+Export to PDF
+Print
+
+Assignment - store userdata in cookies
+ngcookies set, define dependecy in controller..store userid, fname, lname, token store in cookies.
+
+changepassword folder - will appear on home page
+forgotpassword folder - will appear on login
+create both routes.
+cookies
+
+john.snow@mailinator.com

@@ -1,16 +1,14 @@
-<!-- login.html -->
+<form ng-submit="validateCredentials()" class="form" novalidate>
+    <div class="form-group">
+      <input type="text" class="form-control" ng-model="username" placeholder="username" required/>
+    </div> 
 
-<div>
-    <div style="text-align: center">
-        <h1>Login</h1>
-        <form name="login" novalidate ng-submit="validateCreadentials()">
-            <input type="text" ng-model="userName" required></input><br /><br />
-            <input type="password" ng-model="password" required></input><br /><br />
-            <input type="checkbox" ng-model="isAdmin" value="true"></input> Is Admin<br /><br />
-            <div ng-if="message.length">Message: {{ message}}<br/><br/></div>
-            <div ui-sref="forgotpassword">Forgot Password</div>
-            <input type="submit" value="Log in"></input>
-        </form>
-
+    <div class="form-group">
+      <input type="password" class="form-control" ng-model="password" placeholder="password" required/>
     </div>
-</div>
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-success">Login</button>
+      <span class="text-danger">{{ isadmin }}</span>
+    </div>
+</form>
