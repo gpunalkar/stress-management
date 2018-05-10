@@ -39,7 +39,7 @@
     "node-salesforce": "^0.8.0",
     "nodemailer": "^2.6.0",
     "promise": "^7.1.1",
-    "salesforce-oauth2": "^0.1.8"
+    "salesforce-oauth2": "^0.2.0"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
