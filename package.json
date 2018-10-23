@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": ""
+    "start": "",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "Extentia",
   "license": "ISC",
@@ -25,7 +27,7 @@
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-copy": "~0.5.0",
     "grunt-contrib-cssmin": "~0.7.0",
-    "grunt-contrib-imagemin": "^0.9.4",
+    "grunt-contrib-imagemin": "^1.0.0",
     "grunt-contrib-uglify": "^2.0.0",
     "grunt-contrib-yuidoc": "^1.0.0",
     "grunt-plato": "^1.4.0",
@@ -39,7 +41,8 @@
     "node-salesforce": "^0.8.0",
     "nodemailer": "^2.6.0",
     "promise": "^7.1.1",
-    "salesforce-oauth2": "^0.1.8"
+    "salesforce-oauth2": "^0.2.0",
+    "snyk": "^1.104.2"
   },
   "devDependencies": {
     "grunt": "^0.4.5",
@@ -74,5 +77,6 @@
     "karma-phantomjs-launcher": "*",
     "path": "^0.11.14",
     "time-grunt": "^1.0.0"
-  }
+  },
+  "snyk": true
 }
