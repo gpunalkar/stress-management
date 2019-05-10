@@ -1,0 +1,90 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.3
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - angular-password > karma > socket.io > debug:
+        patched: '2019-05-10T03:26:04.817Z'
+    - angular-password > karma > socket.io > engine.io > debug:
+        patched: '2019-05-10T03:26:04.817Z'
+    - angular-password > karma > socket.io > socket.io-client > debug:
+        patched: '2019-05-10T03:26:04.817Z'
+    - angular-password > karma > socket.io > socket.io-client > engine.io-client > debug:
+        patched: '2019-05-10T03:26:04.817Z'
+    - angular-password > karma > socket.io > socket.io-parser > debug:
+        patched: '2019-05-10T03:26:04.817Z'
+    - angular-password > karma > socket.io > socket.io-adapter > socket.io-parser > debug:
+        patched: '2019-05-10T03:26:04.817Z'
+    - angular-password > karma > socket.io > socket.io-client > socket.io-parser > debug:
+        patched: '2019-05-10T03:26:04.817Z'
+    - angular-password > karma > socket.io > socket.io-adapter > debug:
+        patched: '2019-05-10T03:26:04.817Z'
+  'npm:hawk:20160119':
+    - grunt-contrib-yuidoc > yuidocjs > yui > request > hawk:
+        patched: '2019-05-10T03:26:04.817Z'
+  'npm:http-signature:20150122':
+    - grunt-contrib-yuidoc > yuidocjs > yui > request > http-signature:
+        patched: '2019-05-10T03:26:04.817Z'
+  'npm:lodash:20180130':
+    - angular-password > karma > lodash:
+        patched: '2019-05-10T03:26:04.817Z'
+  'npm:mime:20170907':
+    - node-salesforce > request > mime:
+        patched: '2019-05-10T03:26:04.817Z'
+    - salesforce-oauth2 > request > form-data > mime:
+        patched: '2019-05-10T03:26:04.817Z'
+    - node-salesforce > request > form-data > mime:
+        patched: '2019-05-10T03:26:04.817Z'
+    - grunt-contrib-yuidoc > yuidocjs > yui > request > form-data > mime:
+        patched: '2019-05-10T03:26:04.817Z'
+  'npm:minimatch:20160620':
+    - angular-password > gulp > vinyl-fs > glob-stream > minimatch:
+        patched: '2019-05-10T03:26:04.817Z'
+    - angular-password > gulp > vinyl-fs > glob-stream > glob > minimatch:
+        patched: '2019-05-10T03:26:04.817Z'
+    - angular-password > gulp > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2019-05-10T03:26:04.817Z'
+    - grunt-contrib-imagemin > imagemin > vinyl-fs > glob-watcher > gaze > globule > minimatch:
+        patched: '2019-05-10T03:26:04.817Z'
+    - angular-password > gulp > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2019-05-10T03:26:04.817Z'
+    - grunt-contrib-imagemin > imagemin > vinyl-fs > glob-watcher > gaze > globule > glob > minimatch:
+        patched: '2019-05-10T03:26:04.817Z'
+  'npm:ms:20170412':
+    - angular-password > karma > socket.io > debug > ms:
+        patched: '2019-05-10T03:26:04.817Z'
+    - angular-password > karma > socket.io > socket.io-adapter > debug > ms:
+        patched: '2019-05-10T03:26:04.817Z'
+    - angular-password > karma > socket.io > socket.io-client > debug > ms:
+        patched: '2019-05-10T03:26:04.817Z'
+    - angular-password > karma > socket.io > socket.io-client > engine.io-client > debug > ms:
+        patched: '2019-05-10T03:26:04.817Z'
+    - angular-password > karma > socket.io > socket.io-parser > debug > ms:
+        patched: '2019-05-10T03:26:04.817Z'
+    - angular-password > karma > socket.io > socket.io-adapter > socket.io-parser > debug > ms:
+        patched: '2019-05-10T03:26:04.817Z'
+    - angular-password > karma > socket.io > socket.io-client > socket.io-parser > debug > ms:
+        patched: '2019-05-10T03:26:04.817Z'
+    - angular-password > karma > socket.io > engine.io > debug > ms:
+        patched: '2019-05-10T03:26:04.817Z'
+  'npm:request:20160119':
+    - grunt-contrib-yuidoc > yuidocjs > yui > request:
+        patched: '2019-05-10T03:26:04.817Z'
+    - node-salesforce > request:
+        patched: '2019-05-10T03:26:04.817Z'
+  'npm:tunnel-agent:20170305':
+    - grunt-contrib-yuidoc > yuidocjs > yui > request > tunnel-agent:
+        patched: '2019-05-10T03:26:04.817Z'
+    - grunt-contrib-imagemin > imagemin > imagemin-gifsicle > gifsicle > bin-build > download > caw > tunnel-agent:
+        patched: '2019-05-10T03:26:04.817Z'
+    - grunt-contrib-imagemin > imagemin > imagemin-jpegtran > jpegtran-bin > bin-build > download > caw > tunnel-agent:
+        patched: '2019-05-10T03:26:04.817Z'
+    - grunt-contrib-imagemin > imagemin > imagemin-optipng > optipng-bin > bin-build > download > caw > tunnel-agent:
+        patched: '2019-05-10T03:26:04.817Z'
+    - grunt-contrib-imagemin > imagemin > imagemin-gifsicle > gifsicle > bin-wrapper > download > caw > tunnel-agent:
+        patched: '2019-05-10T03:26:04.817Z'
+    - grunt-contrib-imagemin > imagemin > imagemin-jpegtran > jpegtran-bin > bin-wrapper > download > caw > tunnel-agent:
+        patched: '2019-05-10T03:26:04.817Z'
+    - grunt-contrib-imagemin > imagemin > imagemin-optipng > optipng-bin > bin-wrapper > download > caw > tunnel-agent:
+        patched: '2019-05-10T03:26:04.817Z'
