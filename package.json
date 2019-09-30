@@ -31,7 +31,7 @@
     "grunt-plato": "^1.4.0",
     "grunt-rev": "~0.1.0",
     "grunt-usemin": "~2.0.2",
-    "helmet": "^2.3.0",
+    "helmet": "^3.21.1",
     "jsonwebtoken": "^7.1.9",
     "key-del": "^1.2.4",
     "localize": "^0.4.7",
