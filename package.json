@@ -35,7 +35,7 @@
     "jsonwebtoken": "^7.1.9",
     "key-del": "^1.2.4",
     "localize": "^0.4.7",
-    "mongoose": "^4.6.0",
+    "mongoose": "^5.11.7",
     "node-salesforce": "^0.8.0",
     "nodemailer": "^2.6.0",
     "promise": "^7.1.1",
