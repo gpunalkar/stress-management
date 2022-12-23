@@ -32,7 +32,7 @@
     "grunt-rev": "~0.1.0",
     "grunt-usemin": "~2.0.2",
     "helmet": "^2.3.0",
-    "jsonwebtoken": "^7.1.9",
+    "jsonwebtoken": "^9.0.0",
     "key-del": "^1.2.4",
     "localize": "^0.4.7",
     "mongoose": "^4.6.0",
